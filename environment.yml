@@ -1,4 +1,4 @@
-name: ramp-bike
+name: ramp-bike-skore
 channels:
   - conda-forge
   - defaults

@@ -8,3 +8,5 @@ ramp-workflow
 osfclient
 skore
 skrub
+ipykernel
+ipywidgets

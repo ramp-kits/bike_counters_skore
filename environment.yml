@@ -1,0 +1,18 @@
+name: ramp-bike
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - numpy
+  - scipy
+  - pandas
+  - scikit-learn
+  - folium
+  - matplotlib
+  - seaborn
+  - pyarrow
+
+  - pip
+  - pip:
+    - ramp-workflow
+    - osfclient

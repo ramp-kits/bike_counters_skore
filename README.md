@@ -7,7 +7,7 @@
 ### Download the data,
 
 Download the data files with the download_data script. It will untar the
- archive and put the train and test file in the data folder.
+ archive and put the train and test files in the data folder.
 
 ### Install
 
@@ -17,23 +17,30 @@ in `requirements.txt`.
 It is recommended to create a new environment for this project and
 to install those dependencies inside this new environment.
 
-You can create a new conda environement named `bikes-ramp` using:
+You can create a new conda environement named `ramp-bike-skore` using:
 ```bash
-conda create --name bikes-ramp python=3.12
+conda create --name ramp-bike-skore python=3.12
 ```
 
 and then use this new environment install the dependencies in it using pip:
 
 ```
-conda activate bikes-ramp
+conda activate ramp-bike-skore
 pip install -r requirements.txt
 ```
 
-Later on when you work on your project, you need to use the `bikes-ramp`
-environement in any terminal session. This is once again done with:
+Later on when you work on your project, you need to use the `ramp-bike-skore`
+environment in any terminal session. This is once again done with:
 
 ```
-conda activate bikes-ramp
+conda activate ramp-bike-skore
+```
+
+Alternatively, you can also install the environment with conda via the
+ environment.yml file:
+
+```
+conda env create -f environment.yml
 ```
 
 ### Challenge description

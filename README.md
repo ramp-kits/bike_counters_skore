@@ -1,6 +1,6 @@
 # RAMP starting kit on the bike counters dataset
 
-![GH Actions](https://github.com/ramp-kits/bike_counters/actions/workflows/main.yml/badge.svg)
+![GH Actions](https://github.com/ramp-kits/bike_counters_skore/actions/workflows/main.yml/badge.svg)
 
 ## Getting started
 

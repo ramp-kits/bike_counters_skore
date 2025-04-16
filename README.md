@@ -17,23 +17,23 @@ in `requirements.txt`.
 It is recommended to create a new environment for this project and
 to install those dependencies inside this new environment.
 
-You can create a new conda environement named `bikes-ramp` using:
+You can create a new conda environement named `skore-bikes` using:
 ```bash
-conda create --name bikes-ramp python=3.12
+conda create --name skore-bikes python=3.12
 ```
 
 and then use this new environment install the dependencies in it using pip:
 
 ```
-conda activate bikes-ramp
+conda activate skore-bikes
 pip install -r requirements.txt
 ```
 
-Later on when you work on your project, you need to use the `bikes-ramp`
+Later on when you work on your project, you need to use the `skore-bikes`
 environement in any terminal session. This is once again done with:
 
 ```
-conda activate bikes-ramp
+conda activate skore-bikes
 ```
 
 ### Challenge description

@@ -11,6 +11,8 @@ dependencies:
   - matplotlib
   - seaborn
   - pyarrow
+  - skore
+  - skrub
 
   - pip
   - pip:

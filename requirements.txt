@@ -6,3 +6,5 @@ scikit-learn
 folium
 ramp-workflow
 osfclient
+skore
+skrub

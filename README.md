@@ -170,7 +170,7 @@ You can get more information regarding this command line:
 ramp-test --help
 ```
 
-### Submit a model
+### Submit a model to get your score on the leaderboard
 
 On the UI of the challenge on RAMP studio, you can go to the sandbox, then:
 - either upload your python script containing your model,

@@ -2,6 +2,12 @@
 
 ![GH Actions](https://github.com/ramp-kits/bike_counters_skore/actions/workflows/main.yml/badge.svg)
 
+Welcome to this RAMP challenge using skore and skrub, two recent libraries developed by the scikit-learn team at Probabl!
+
+Links:
+- skore: [GitHub repository](https://github.com/probabl-ai/skore), [documentation](https://skore.probabl.ai/), [demo videos](https://youtube.com/playlist?list=PLSIzlWDI17bTpixfFkooxLpbz4DNQcam3)
+- skrub: [GitHub repository](https://github.com/skrub-data/skrub), [documentation](https://skrub-data.org/stable/)
+
 ## Getting started
 
 ### Install

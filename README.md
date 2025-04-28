@@ -4,43 +4,43 @@
 
 ## Getting started
 
-### Download the data,
-
-Download the data files with the download_data script. It will untar the
- archive and put the train and test files in the data folder.
-
 ### Install
 
 To run a submission and the notebook you will need the dependencies listed
 in `requirements.txt`.
 
-It is recommended to create a new environment for this project and
+For that, it is recommended to create a new environment for this project and
 to install those dependencies inside this new environment.
 
-You can create a new conda environement named `ramp-bike-skore` using:
-```bash
-conda create --name ramp-bike-skore python=3.12
-```
+1. You can create a new conda environement named `ramp-bike-skore` using:
+   ```bash
+   conda create --name ramp-bike-skore python=3.12
+   ```
 
-and then use this new environment install the dependencies in it using pip:
+2. Then, use this new environment install the dependencies in it using pip:
+   ```
+   conda activate ramp-bike-skore
+   pip install -r requirements.txt
+   ```
 
-```
-conda activate ramp-bike-skore
-pip install -r requirements.txt
-```
+   Alternatively to pip, you can also install the environment with conda via the `environment.yml` file:
+   ```
+   conda env create -f environment.yml
+   ```
 
-Later on when you work on your project, you need to use the `ramp-bike-skore`
+Later on, when you work on your project, you need to use the `ramp-bike-skore`
 environment in any terminal session. This is once again done with:
-
 ```
 conda activate ramp-bike-skore
 ```
 
-Alternatively, you can also install the environment with conda via the
- environment.yml file:
+### Download the data
 
+Download the data files with the `download_data.py` script. It will untar the
+ archive and put the train and test files in a `data` folder:
 ```
-conda env create -f environment.yml
+conda activate ramp-bike-skore
+python download_data.py
 ```
 
 ### Challenge description
@@ -155,7 +155,7 @@ ramp-test --help
 ### To go further
 
 You can find more information regarding `ramp-workflow` in the
-[dedicated documentation](https://paris-saclay-cds.github.io/ramp-docs/ramp-workflow/stable/using_kits.html)
+[dedicated documentation](https://paris-saclay-cds.github.io/ramp-docs/ramp-workflow/stable/using_kits.html).
 
 You can find the description of the columns present in the `external_data.csv`
 in `parameter-description-weather-external-data.pdf`. For more information about this

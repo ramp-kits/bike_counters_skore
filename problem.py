@@ -5,6 +5,9 @@ import pandas as pd
 import rampwf as rw
 from sklearn.model_selection import TimeSeriesSplit
 
+from rampwf.score_types.base import BaseScoreType
+from sklearn.metrics import r2_score
+
 problem_title = "Bike count prediction"
 _target_column_name = "log_bike_count"
 # A type (class) which will be used to create wrapper objects for y_pred
@@ -12,8 +15,23 @@ Predictions = rw.prediction_types.make_regression()
 # An object implementing the workflow
 workflow = rw.workflows.EstimatorExternalData()
 
+
+class R2Score(BaseScoreType):
+    is_lower_the_better = False
+    minimum = 0.0  # sklearn behavior
+    maximum = 1.0
+
+    def __init__(self, name='r2', precision=2):
+        self.name = name
+        self.precision = precision
+
+    def __call__(self, y_true, y_pred):
+        return r2_score(y_true, y_pred)
+    
+
 score_types = [
     rw.score_types.RMSE(name="rmse", precision=3),
+    R2Score(name='r2', precision=3),
 ]
 
 

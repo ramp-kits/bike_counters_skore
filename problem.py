@@ -21,17 +21,17 @@ class R2Score(BaseScoreType):
     minimum = 0.0  # sklearn behavior
     maximum = 1.0
 
-    def __init__(self, name='r2', precision=2):
+    def __init__(self, name="r2", precision=2):
         self.name = name
         self.precision = precision
 
     def __call__(self, y_true, y_pred):
         return r2_score(y_true, y_pred)
-    
+
 
 score_types = [
     rw.score_types.RMSE(name="rmse", precision=3),
-    R2Score(name='r2', precision=3),
+    R2Score(name="r2", precision=3),
 ]
 
 

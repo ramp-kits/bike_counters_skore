@@ -8,22 +8,24 @@ Links:
 - skore: [GitHub repository](https://github.com/probabl-ai/skore), [documentation](https://skore.probabl.ai/), [demo videos](https://youtube.com/playlist?list=PLSIzlWDI17bTpixfFkooxLpbz4DNQcam3)
 - skrub: [GitHub repository](https://github.com/skrub-data/skrub), [documentation](https://skrub-data.org/stable/)
 
-## Getting started
+## Setup
+
+1. First of all, fork and clone this GitHub repository.
 
 ### Install
 
-To run a submission and the notebook you will need the dependencies listed
+To run a submission and the notebook, you will need the dependencies listed
 in `requirements.txt`.
 
 For that, it is recommended to create a new environment for this project and
 to install those dependencies inside this new environment.
 
-1. You can create a new conda environement named `ramp-bike-skore` using:
+2. You can create a new conda environement named `ramp-bike-skore` using:
    ```bash
    conda create --name ramp-bike-skore python=3.12
    ```
 
-2. Then, use this new environment install the dependencies in it using pip:
+3. Then, use this new environment install the dependencies in it using pip:
    ```
    conda activate ramp-bike-skore
    pip install -r requirements.txt
@@ -49,7 +51,17 @@ conda activate ramp-bike-skore
 python download_data.py
 ```
 
-### Challenge description
+## Challenge description
+
+The challenge in hosted on [RAMP](https://ramp.studio): your feed a python script containing your model, so that your model is ran on the hidden test data to obtain the predictions, and the leaderboard displays your resulting scores.
+
+### Create an account on RAMP and subscribe to the challenge
+
+1. Create an account on https://ramp.studio using a valid email, then click on the received link.
+2. Subscribe to the RAMP challenge about skore and skrub.
+3. If not already done: clone this repository, install the `ramp-bike-skore` environment, and download the data.
+
+### Getting started
 
 Get started on this RAMP with the
 [dedicated notebook](bike_counters_starting_kit.ipynb).
@@ -68,7 +80,7 @@ jupyter notebook ./bike_counters_starting_kit.ipynb
 
 ### Test a submission
 
-The submissions need to be located in the `submissions` folder. For instance
+Your submissions need to be located in the `submissions` folder. For instance
 for `my_submission`, it should be located in `submissions/my_submission`.
 
 To run a specific submission, you can use the `ramp-test` command line:
@@ -157,6 +169,12 @@ You can get more information regarding this command line:
 ```bash
 ramp-test --help
 ```
+
+### Submit a model
+
+On the UI of the challenge on RAMP studio, you can go to the sandbox, then:
+- either upload your python script containing your model,
+- or copy-paste your Python code directly in the UI.
 
 ### To go further
 

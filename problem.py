@@ -8,7 +8,7 @@ from sklearn.model_selection import TimeSeriesSplit
 from rampwf.score_types.base import BaseScoreType
 from sklearn.metrics import r2_score
 
-problem_title = "Bike count prediction"
+problem_title = "Bike count prediction (using skore)"
 _target_column_name = "log_bike_count"
 # A type (class) which will be used to create wrapper objects for y_pred
 Predictions = rw.prediction_types.make_regression()
